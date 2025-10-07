@@ -1,110 +1,272 @@
-/* Global styles */
-* {
-    font-family: 'Poppins', sans-serif;
-    box-sizing: border-box;
+*{
+    font-family: 'poppina',sans-serif;
 }
-
-/* Body and background */
-body {
-    background: url("cc.jpeg") no-repeat center center;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    text-align: center;
-}
-
-/* Container */
-.container {
-    width: 90%;
-    max-width: 450px;
-    height: auto; /* kugirango ikomeze gukura bitewe n'ibiri imbere */
-    padding: 20px;
-    backdrop-filter: blur(20px);
-    background: rgba(0, 0, 0, 0.3); /* subtle dark overlay */
-    border: 1px solid aqua;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    color: white;
-}
-
-/* Heading */
-h2 {
-    font-size: 35px;
-    margin-bottom: 30px;
-}
-
-/* Form inputs */
-form {
-    width: 100%;
-    position: relative;
-}
-
-/* Inputs style */
-input {
-    width: 100%;
-    height: 43px;
-    background: transparent;
-    border: 1px solid white;
-    border-radius: 5px;
-    color: white;
-    font-size: 20px;
-    padding-left: 40px; /* space for icon */
-    margin-bottom: 25px;
-}
-
-/* Placeholder style */
-::placeholder {
-    color: white;
-    font-size: 16px;
-}
-
-/* Icons inside inputs */
-input[type="submit"],
-button {
-    width: 100%;
-    height: 40px;
-    font-size: 16px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.2s;
-    color: black;
-    background: aqua;
-    border: none;
-}
-
-
-input[type="submit"]:hover {
-    background: #0e6fedcc;
-}
-p{
-    color:white;
-    font-size: 18px;
-    font-weight: bold;
-}
-button{
-    width: 100%;
-height: 45px;
-background-color: rgb(35, 35, 118);
-color: white;
-cursor: pointer;
-}
-button:hover{
-    background-color: rgb(0, 21, 255);
+body{
+    background: rgb(255, 255, 255);
+    margin-top: 9vh;
+    margin-left: 5vh;
+    margin-right: 5vh;
 }
 a{
-    font-size: 20px;
-    color: white;
-    border-radius: 5px;
+    color: rgb(54, 54, 158);
     text-decoration: none;
+   font-weight: bold;
+    padding:5vh;
 }
-.check{
-    width: 20px;
-    height: 20px;
+a:hover{
+    text-decoration: underline green ;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 2s;
+    background: linear-gradient(to right, #2f1d1d, #13854e);
+  }
+  
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    border: 1px solid #ddd;
+    z-index: 1;
+    border-radius: 4px;
+    transition: 2s;
+    
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    transition: 0.5s;
+    
+  }
+ 
+  .dropdown-content a:hover {
+    background-color: #0ca3a3;
+    border-radius: 6px;
+   
+   
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+    transition: 2s;
+  }
+  .dropdown:hover button {
+    background-color: #3e8e41;
+    transition: 1s;
+  }
+  .llink-container{
+display: block;
+margin-left: 80vh;
+
+  }
+  .all{
+    position: fixed;
+    background: white;
+    height: 15vh;
+    border-radius: 32px;
+  }
+  .sign{
+ color: black;
+   border: none;
+   height: 6vh;
+  border-radius: 6px;
+  background-color: transparent;
+  background-color: rgb(109, 63, 63);
+  transition: 1s;
+  font-size: 15px;
+  }
+  .sign a{
+    color: wheat;
+    width: 10vh;
+  }
+  .signa{
+    background-color: rgb(208, 51, 51);
+    border: none;
+    height: 6vh;
+   border-radius: 9px;
+   font-size: 15px;
+  }
+  .signa:hover{
+    border-radius: 9px;
+    transition: 1s;
+    background: linear-gradient(to right, #2f1d1d, #13854e);
+  }
+  .signa a{
+    color: white;
+  }
+  .btn{
+    color: white;
+    border: none;
+    height: 6vh;
+  }
+  .sign:hover{
+  border-radius: 9px;
+  transition: 1s;
+  background: linear-gradient(to right, #2f1d1d, #13854e);
+  }
+  button{
+    transition: 1s;
+    width: 20vh;
+  }
+  img{
+    width: 13vh;
+    height: 13vh;
+    display: flex;
+  }
+  .log{
+    margin-top: -8vh;
+    
+  }
+  .cont{
+    margin-top: -8vh;
+    margin-left: 15vh;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .imge-one{
+    margin-top: 10vh;
+    margin-left: 90vh;
+    width: 80vh;
+    height: 90vh;
+    display: block;
+  }
+  span{
+    color: blue;
+    font-weight: bold;
+    font-size: 40px;
+    border-radius: 360px;
+  }
+  .words{
+    margin-top: -80vh;
+    font-size: 18px;
+    color: rgb(13, 101, 101);
+  }
+ 
+  
+  .acdem{
+    color: rgb(0, 132, 255);
+    font-size: 25px;
+    font-weight: bold;
+    
+  }
+  .teac{
+    margin-top: 5vh;
+    font-size: 18px;
+    color: black;
+  }
+  .start{
+    border-radius: 30px;
+    border: none;
+    background-color: #0ca3a3;
+    width: 39vh;
+    height: 9vh;
+    cursor: pointer;
+    font-size: 20px;
+    color: #ddd;
+    font-weight: bold;
+
+  }
+  .get{
+    justify-content: center;
+    text-align: center;
+  }
+  .aboutusimage-container{
+    background-color: rgb(231, 228, 222);
+    border-radius: 10px;
+  }
+  .abo-im{
+    margin-left: 10vh;
+    border-radius: 360px;
+    width: 90vh;
+  }
+  .drd-container{
+    box-shadow: inset 0 0 20px rgb(0, 0, 0);
+    width: 48vh;
+    border-radius: 10px;
+    height: 56vh;
+    text-align: center;
+    margin-top: 2vh;
+    transition: 1s;
+    /* padding: 20px; */
+  }
+  
+  .drd-container p{
+    font-weight: lighter;
+  font-weight: bold;
+  color: rgb(6, 59, 42);
+  }
+  .drd-container img{
+    border-radius: 9px;
+    margin-left: 5vh;
+    width: 35vh;
+    height: 32vh;
+    transition: 1s;
+  }
+  .drd-container img:hover{
+  box-shadow: inset 0 0 20px aqua;
+  transform: scaleY(1.1);
+  }
+  .drd-container button{
+    border-radius: 2px;
+    width: 35vh;
+    margin-right: 5vh;
+    height: 6vh;
+    background-color: rgb(73, 78, 225);
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 15px;
+  }
+.drd-container button:hover{
+background: rgb(15, 15, 238);
+}
+.cardcontent{
+  display:flex;
+  padding: 20px;
+  margin-left: 20px;
+ 
+}
+.drd-containers{
+  border-radius: 2px;
+    width: 35vh;
+    margin-right: 5vh;
+    height: 6vh;
+    background-color: rgb(73, 78, 225);
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 15px;
+}
+.only{
+  margin-left: 60vh;
+}
+.about_content p{
+  color: rgb(12, 86, 147);
+  font-size: 18px;
+}
+.contactaddress p{
+  color: rgb(12, 86, 147);
+  font-size: 18px;
+  font-weight: bold;
+}
+.contactaddress{
+  margin-left: 80vh;
+  margin-top: -40vh;
 }
